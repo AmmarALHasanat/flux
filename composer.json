@@ -1,9 +1,13 @@
 {
-    "name": "livewire/flux",
-    "description": "The official UI component library for Livewire.",
+    "name": "ammar-alhasanat/flux",
+    "description": "A customized version of Flux UI with activated Toast components.",
     "keywords": ["flux", "laravel", "livewire", "components", "ui"],
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
+        {
+            "name": "Ammar AL-Hasanat",
+            "email": "ammarabed13@gmail.com"
+        },
         {
             "name": "Caleb Porzio",
             "email": "calebporzio@gmail.com"
