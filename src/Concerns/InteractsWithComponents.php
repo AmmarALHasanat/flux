@@ -77,4 +77,20 @@ trait InteractsWithComponents
 
         app('livewire')->current()->dispatch('toast-show', ...$params);
     }
+
+    public function message($text, $heading = null, $duration = 5000, $variant = null, $position = null)
+    {
+        $params = [
+            'duration' => $duration,
+            'slots' => [],
+            'dataset' => [],
+        ];
+
+        if ($text) $params['slots']['text'] = $text;
+        if ($heading) $params['slots']['heading'] = $heading;
+        if ($variant) $params['dataset']['variant'] = $variant;
+        if ($position) $params['dataset']['position'] = $position;
+
+        app('livewire')->current()->dispatch('message-show', ...$params);
+    }
 }
