@@ -1,5 +1,5 @@
 {
-    "name": "ammar-alhasanat/flux",
+    "name": "livewire/flux",
     "description": "A customized version of Flux UI with activated Toast components.",
     "keywords": ["flux", "laravel", "livewire", "components", "ui"],
     "license": "MIT",
