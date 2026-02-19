@@ -365,3 +365,102 @@ ui-message {
     color: #f43f5e;
 }
 
+/*Markdown Editor Custom Styles*/
+.editor-toolbar {
+    z-index: 10 !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+    background: rgba(0,0,0,0.02) !important;
+    padding: 6px 10px !important;
+}
+
+.dark .editor-toolbar {
+    background: rgba(255,255,255,0.03) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+.editor-toolbar button {
+    border-radius: 4px !important;
+    border: 1px solid transparent !important;
+    width: 28px !important; height: 28px !important;
+    color: inherit !important;
+}
+
+.editor-toolbar button:hover { background: rgba(0,0,0,0.05) !important; }
+.dark .editor-toolbar button:hover { background: rgba(255,255,255,0.1) !important; }
+
+.editor-toolbar button.active {
+    background: white !important;
+    border-color: #e4e4e7 !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05) !important;
+}
+
+.dark .editor-toolbar button.active {
+    background: rgba(255,255,255,0.1) !important;
+    border-color: rgba(255,255,255,0.1) !important;
+}
+
+.CodeMirror {
+    border: none !important;
+    background: transparent !important;
+    color: inherit !important;
+    font-family: ui-sans-serif, system-ui, sans-serif !important;
+    font-size: 0.9rem !important;
+    padding: 12px !important;
+    min-height: 150px !important;
+    height: auto !important;
+}
+
+.CodeMirror-fullscreen, .editor-toolbar.fullscreen {
+    z-index: 9999 !important;
+}
+
+.cm-formatting { color: #818cf8 !important; }
+
+
+.editor-preview {
+    background: white !important;
+    color: #18181b !important; /* zinc-900 */
+    line-height: 1.6 !important;
+}
+
+.dark .editor-preview {
+    background: #09090b !important; /* zinc-950 */
+    color: #f4f4f5 !important; /* zinc-100 */
+}
+
+.editor-preview h1 { font-size: 1.875rem !important; font-weight: 700 !important; margin-bottom: 1rem !important; display: block !important; }
+.editor-preview h2 { font-size: 1.5rem !important; font-weight: 700 !important; margin-bottom: 0.75rem !important; display: block !important; }
+.editor-preview h3 { font-size: 1.25rem !important; font-weight: 600 !important; margin-bottom: 0.5rem !important; display: block !important; }
+
+.editor-preview ul {
+    list-style-type: disc !important;
+    padding-left: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+}
+
+.editor-preview ol {
+    list-style-type: decimal !important;
+    padding-left: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+}
+
+.editor-preview li {
+    display: list-item !important;
+    margin-bottom: 0.25rem !important;
+}
+
+.editor-preview blockquote {
+    border-left: 4px solid #e5e7eb !important;
+    padding-left: 1rem !important;
+    color: #4b5563 !important;
+    font-style: italic !important;
+    margin: 1rem 0 !important;
+}
+
+.dark .editor-preview blockquote {
+    border-left-color: #3f3f46 !important;
+    color: #a1a1aa !important;
+}
